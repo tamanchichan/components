@@ -1,0 +1,246 @@
+/* body */
+body {
+  background-color: #f4f5f6;
+}
+
+/* header */
+header {
+  background-color: #fff;
+  font-size: 0px;
+  height: 75px;
+  line-height: 75px;
+}
+
+header .flex {
+  justify-content: space-between;
+}
+
+header .header-title h1 {
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  height: 75px;
+  line-height: 75px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+header .header-menu nav ul {
+  height: 75px;
+  line-height: 75px;
+}
+
+header .header-menu nav ul li {
+  cursor: pointer;
+  display: inline;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+header .header-menu nav ul li + li {
+  margin-left: 15px;
+}
+
+/* main */
+main .box-info h2 {
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-weight: 400;
+  width: max-content;
+}
+
+main .box-info p {
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: #fff;
+  height: 400px;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer h1 {
+  font-size: 30px;
+  font-weight: 400;
+  height: 75px;
+  margin-bottom: 25px;
+  line-height: 75px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+footer h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+footer nav ul li {
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  width: fit-content;
+}
+
+footer nav ul li + li {
+  margin-top: 15px;
+}
+
+footer .quick-links nav ul li {
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease-in;
+}
+
+footer .quick-links nav ul li:hover {
+  border-bottom: 1px solid #000;
+}
+
+footer .follow-us .icon {
+  color: #1671ed;
+  transition: color 0.25s ease-in-out;
+}
+
+footer .follow-us .icon:hover {
+  color: #1365d5;
+}
+
+footer .follow-us nav ul li {
+  margin: 0 auto;
+}
+
+footer .follow-us nav ul li + li {
+  margin-top: 20px;
+}
+
+footer .contact-info .icon {
+  margin-right: 15px;
+}
+
+footer .contact-info nav ul li {
+  cursor: default;
+}
+
+footer .contact-info nav ul li + li {
+  margin-top: 50px;
+}
+
+/* class */
+.box + .box {
+  margin-left: 50px;
+}
+
+.box-info {
+  border: 1px solid rgb(0 0 0 / 0.25);
+  padding: 20px;
+  width: 250px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.button-one {
+  background-color: #0c5adb;
+  color: #fff;
+}
+
+.button-two {
+  background-color: transparent;
+  border: 1px solid rgb(255 255 255 / 0.25);
+  color: #fff;
+  margin-left: 50px;
+}
+
+.button-one, .button-two {
+  border-radius: 5px;
+  display: block;
+  font-size: 15px;
+  height: 45px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  width: 180px;
+}
+
+.button-one:hover, .button-two:hover {
+  background-color: #fff;
+  color: #0c5adb;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+}
+
+.flex {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.hero-banner {
+  background-image: url('https://raw.githubusercontent.com/tamanchichan/cdn/main/hero-banner-alt-1.jpg');
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  height: calc(100vh - 75px);
+}
+
+.img {
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgb(0 0 0 / 0.25);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+.img-one {background-image: url('../image/responsive-design.jpg');}
+.img-two {background-image: url('../image/24-7-support.jpg');}
+.img-three {background-image: url('../image/quality-product.jpg');}
+.img-four {background-image: url('../image/productivity.jpg');}
+
+.p-one, .p-two, .p-three {
+  text-align: center;
+}
+
+.p-one, .p-three {
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+
+.p-two {
+  font-size: 120px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 480px) {
+  /* header */
+  header {
+    height: 100px;
+  }
+  
+  header .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
